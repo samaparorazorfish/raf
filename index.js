@@ -55,6 +55,9 @@ if(!raf || !caf) {
       }
     }
   }
+
+  global.requestAnimationFrame = raf;
+  global.cancelAnimationFrame = caf;
 }
 
 module.exports = function(fn) {
